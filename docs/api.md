@@ -1,0 +1,3 @@
+# API
+
+::: seeallcolors.core
