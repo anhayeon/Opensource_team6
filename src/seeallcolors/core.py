@@ -15,3 +15,19 @@ def simulate_colorblindness(image_data: object, colorblind_type: str) -> object:
         >>> sim_img = simulate_colorblindness(img, "protanopia")
     """
     raise NotImplementedError
+
+
+def preserve_details(original_data: object, corrected_data: object) -> object:
+    """원본 이미지의 밝기와 세부 정보를 보정 이미지에 반영합니다.
+
+    Args:
+        original_data (object): 보정 전 원본 이미지 데이터.
+        corrected_data (object): 색상 보정이 적용된 이미지 데이터.
+
+    Returns:
+        object: 원본의 밝기, 윤곽선, 질감이 보존된 최종 이미지 데이터.
+
+    Examples:
+        >>> final_img = preserve_details(original_img, corrected_img)
+    """
+    raise NotImplementedError
