@@ -54,3 +54,23 @@ def load_image(image_path: str):
         True
     """
     raise NotImplementedError
+
+
+def save_corrected_image(image_data: object, output_path: str) -> bool:
+    """색상 보정이 끝난 최종 이미지 데이터를 지정한 파일 경로에 저장합니다.
+
+    Args:
+        image_data (object): 저장할 최종 이미지 데이터.
+        output_path (str): 저장할 파일 경로 및 파일명 (예: 'result.png').
+
+    Returns:
+        bool: 파일 저장 성공 여부 (성공 시 True).
+
+    Raises:
+        PermissionError: 저장 경로에 쓰기 권한이 없을 때 발생.
+
+    Examples:
+        >>> save_corrected_image(final_data, "output.png")
+        True
+    """
+    raise NotImplementedError
