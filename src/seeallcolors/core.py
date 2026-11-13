@@ -74,3 +74,24 @@ def save_corrected_image(image_data: object, output_path: str) -> bool:
         True
     """
     raise NotImplementedError
+
+
+def correct_colors(simulated_data: object, colorblind_type: str) -> object:
+    """구분하기 어려운 색 차이를 해당 유형이 인식할 수 있는 색 영역으로 이동 및 재배치합니다.
+
+    Args:
+        simulated_data (object): 시뮬레이션 또는 원본 이미지 데이터 객체.
+        colorblind_type (str): 보정 목표가 되는 색각 이상 종류 ('protanopia', 'deuteranopia', 'tritanopia').
+
+    Returns:
+        object: 색상 정보 구분이 개선되고 보정이 완료된 새 이미지 데이터 객체.
+
+    Raises:
+        ValueError: 지원하지 않는 색각 이상 종류가 입력되었을 때 발생.
+
+    Examples:
+        >>> corrected_img = correct_colors(sim_img, "protanopia")
+        >>> corrected_img is not None
+        True
+    """
+    raise NotImplementedError
