@@ -2,7 +2,10 @@
 
 ## 1. What it does
 
-TODO
+- 입력 이미지를 불러와 처리 가능한 이미지 데이터 객체로 변환합니다.
+- 색각 이상 유형(`protanopia`, `deuteranopia`, `tritanopia`)에 따른 시각 환경을 시뮬레이션합니다.
+- 구분하기 어려운 색상 영역을 인지 가능한 색 영역으로 재배치하고 원본 이미지의 디테일을 보존합니다.
+- 시뮬레이션 및 색상 보정이 완료된 이미지를 결과 파일로 저장합니다.
 
 ## 2. Installation
 
@@ -89,11 +92,11 @@ SeeAllColors는 색각 이상 사용자가 이미지의 색상을 더 쉽게 구
 
 ### Team Rules
 
-프로젝트의 협업 및 PR 규칙은 [Team Rules](docs/team-rules.md)를 참고하세요.
+프로젝트의 협업 및 PR 규칙은 [Team Rules](docs/team-rules.md)를 참고
 
 ### AI Use
 
-- ChatGPT를 활용하여 README의 Team 및 License 항목 작성과 Markdown 형식을 보조받았습니다.
+- README의 Team 및 License 항목 작성과 Markdown 형식을 보조받았습니다.
 - 팀 규칙과 LICENSE 파일을 직접 확인했습니다.
 
 ## 9. License
