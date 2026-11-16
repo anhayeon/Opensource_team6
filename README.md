@@ -9,7 +9,8 @@ SeeAllColors는 색각 이상 사용자가 이미지의 색상을 더 쉽게 구
 - [anhayeon](https://github.com/anhayeon)
 - [sero-an](https://github.com/sero-an)
 - [shin-yul](https://github.com/shin-yul)
-- TODO: 나머지 팀원 2명의 이름 및 GitHub ID 추가
+- [kimjs1127](https://github.com/kimjs1127)
+- [Leemihye07](https://github.com/Leemihye07)
 
 ### Team Rules
 
