@@ -1,5 +1,80 @@
 # Opensource_team6
 
+## 1. What it does
+
+TODO
+
+## 2. Installation
+
+### Install from TestPyPI
+
+You can install the package from TestPyPI for testing purposes.
+
+```bash
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ seeallcolors
+```
+
+### Install from PyPI
+
+After the package is officially released, you can install it from PyPI.
+
+```bash
+pip install seeallcolors
+```
+
+## 3. Quick Start
+
+SeeAllColors allows users to simulate how an image appears to people with different types of color vision deficiency.
+
+### Example
+
+Prepare an image file named `sample.png` in your working directory.
+
+```python
+from seeallcolors.core import load_image, simulate_colorblindness
+
+image = load_image("sample.png")
+result = simulate_colorblindness(image, "protanopia")
+```
+
+### Input
+- An image file (JPG or PNG).
+- A color vision deficiency type: `protanopia`, `deuteranopia`, or `tritanopia`.
+
+### Output
+- Image data processed to simulate the selected type of color vision deficiency.
+
+## 4. Dependencies
+
+Python 3.10 이상이 필요합니다. 아래 패키지는 pip로 설치할 때 자동으로 함께 설치됩니다.
+
+| 패키지 | import 이름 | 버전 | 라이선스 | 용도 |
+|---|---|---|---|---|
+| [NumPy](https://pypi.org/project/numpy/) | `numpy` | >=1.26 | BSD-3-Clause | 픽셀 배열 처리 및 색 공간 계산 |
+| [Pillow](https://pypi.org/project/Pillow/) | `PIL` | >=10 | MIT-CMU | JPG / PNG 이미지 읽기 및 저장 |
+
+표준 라이브러리 모듈은 목록에 포함하지 않았습니다.
+모든 의존성은 permissive 라이선스로, 이 프로젝트의 MIT 라이선스와 호환됩니다.
+
+## 5. Tests
+
+TODO (이후 수업에서 작성)
+
+## 6. Documentation
+
+전체 문서는 `src/seeallcolors/core.py`의 docstring을 바탕으로 MkDocs로 생성됩니다.
+
+- 문서 사이트: https://anhayeon.github.io/Opensource_team6/
+- API 레퍼런스: https://anhayeon.github.io/Opensource_team6/api/
+- 프로젝트 제안서: [docs/proposal.md](docs/proposal.md)
+- 팀 규칙: [docs/team-rules.md](docs/team-rules.md)
+
+`main` 브랜치에 push될 때마다 GitHub Actions가 문서 사이트를 자동으로 다시 빌드하고 배포합니다.
+
+## 7. Release
+
+TODO (이후 수업에서 작성)
+
 ## 8. Team
 
 SeeAllColors는 색각 이상 사용자가 이미지의 색상을 더 쉽게 구별할 수 있도록 돕는 Team 6 프로젝트입니다.
