@@ -6,11 +6,11 @@ SeeAllColors는 색각 이상 사용자가 이미지의 색상을 더 쉽게 구
 
 ### Team Members
 
-- [anhayeon](https://github.com/anhayeon)
-- [sero-an](https://github.com/sero-an)
-- [shin-yul](https://github.com/shin-yul)
-- [kimjs1127](https://github.com/kimjs1127)
-- [Leemihye07](https://github.com/Leemihye07)
+- 신율 ([shin-yul](https://github.com/shin-yul))
+- 안하연 ([anhayeon](https://github.com/anhayeon))
+- 김진서 ([kimjs1127](https://github.com/kimjs1127))
+- 안세로 ([sero-an](https://github.com/sero-an))
+- 이미혜 ([Leemihye07](https://github.com/Leemihye07))
 
 ### Team Rules
 
