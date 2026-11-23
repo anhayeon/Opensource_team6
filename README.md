@@ -61,7 +61,9 @@ Python 3.10 이상이 필요합니다. 아래 패키지는 pip로 설치할 때 
 
 ## 5. Tests
 
-TODO (이후 수업에서 작성)
+```bash
+pip install -e . pytest
+pytest
 
 ## 6. Documentation
 
