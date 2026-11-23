@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def simulate_colorblindness(image_data: object, colorblind_type: str) -> object:
     """선택한 색각 이상 유형(적색맹, 녹색맹, 청색맹)에서 어떻게 보이는지 시뮬레이션합니다.
 
@@ -26,12 +29,30 @@ def preserve_details(original_data: object, corrected_data: object) -> object:
         corrected_data (object): 색상 보정이 적용된 이미지 데이터.
 
     Returns:
-        object: 원본의 밝기, 윤곽선, 질감이 보존된 최종 이미지 데이터.
-
+        object: 원본의 밝기 차이를 반영한 RGB 이미지 배열.
     Examples:
         >>> final_img = preserve_details(original_img, corrected_img)
     """
-    raise NotImplementedError
+    original = np.asarray(original_data)
+    corrected = np.asarray(corrected_data)
+
+    if original.shape != corrected.shape:
+        raise ValueError("원본과 보정 이미지의 크기가 같아야 합니다.")
+
+    if original.ndim != 3 or original.shape[2] != 3:
+        raise ValueError("RGB 이미지 데이터가 필요합니다.")
+
+    original = original.astype(np.float32)
+    corrected = corrected.astype(np.float32)
+
+    weights = np.array([0.2126, 0.7152, 0.0722])
+
+    original_luma = np.sum(original * weights, axis=2, keepdims=True)
+    corrected_luma = np.sum(corrected * weights, axis=2, keepdims=True)
+
+    result = corrected + (original_luma - corrected_luma)
+
+    return np.clip(np.rint(result), 0, 255).astype(np.uint8)
 
 
 
